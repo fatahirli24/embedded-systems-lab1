@@ -1,0 +1,47 @@
+// setup() runs once when the Arduino powers on or resets
+void setup() {
+    // Configure digital pin 12 as an output
+    // This pin drives the first LED
+    pinMode(12, OUTPUT);
+
+    // Configure digital pin 8 as an output
+    // This pin drives the second LED
+    pinMode(8, OUTPUT);
+
+    // Configure digital pin 4 as an output
+    // This pin drives the third LED
+    pinMode(4, OUTPUT);
+}
+
+// loop() runs repeatedly forever after setup() finishes
+void loop() {
+    // Set pin 12 HIGH, so LED 1 turns on
+    digitalWrite(12, HIGH);
+
+    // Keep LED 1 on for 500 milliseconds
+    delay(500);
+
+    // Set pin 12 LOW, so LED 1 turns off
+    digitalWrite(12, LOW);
+
+    // Set pin 8 HIGH, so LED 2 turns on
+    digitalWrite(8, HIGH);
+
+    // Keep LED 2 on for 500 milliseconds
+    delay(500);
+
+    // Set pin 8 LOW, so LED 2 turns off
+    digitalWrite(8, LOW);
+
+    // Set pin 4 HIGH, so LED 3 turns on
+    digitalWrite(4, HIGH);
+
+    // Keep LED 3 on for 500 milliseconds
+    delay(500);
+
+    // Set pin 4 LOW, so LED 3 turns off
+    digitalWrite(4, LOW);
+
+    // After this point, loop() starts again automatically,
+    // so the LED pattern repeats forever
+}
